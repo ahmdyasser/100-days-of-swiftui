@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var configureIsTapped = false
     @StateObject var viewModel = ViewModel()
-    
+
     var body: some View {
         NavigationView {
 

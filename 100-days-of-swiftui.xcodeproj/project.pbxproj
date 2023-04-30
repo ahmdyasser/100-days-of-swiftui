@@ -11,6 +11,15 @@
 		9666F95F29CFA9EB00009417 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9666F95E29CFA9EB00009417 /* ContentView.swift */; };
 		9666F96129CFA9EC00009417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9666F96029CFA9EC00009417 /* Assets.xcassets */; };
 		9666F96429CFA9EC00009417 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9666F96329CFA9EC00009417 /* Preview Assets.xcassets */; };
+		96BB6D1A29DB6CA100430538 /* Tagged in Frameworks */ = {isa = PBXBuildFile; productRef = 96BB6D1929DB6CA100430538 /* Tagged */; };
+		96BB6D1C29DB6CA100430538 /* TaggedMoney in Frameworks */ = {isa = PBXBuildFile; productRef = 96BB6D1B29DB6CA100430538 /* TaggedMoney */; };
+		96BB6D1E29DB6CA100430538 /* TaggedTime in Frameworks */ = {isa = PBXBuildFile; productRef = 96BB6D1D29DB6CA100430538 /* TaggedTime */; };
+		96BB6D2029DB6CC000430538 /* Tagged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BB6D1F29DB6CC000430538 /* Tagged.swift */; };
+		96D6FD4129D308E100CD455B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96D6FD4029D308E100CD455B /* GoogleService-Info.plist */; };
+		96D6FD4429D309F600CD455B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 96D6FD4329D309F600CD455B /* FirebaseAnalytics */; };
+		96D6FD4629D309F600CD455B /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 96D6FD4529D309F600CD455B /* FirebaseRemoteConfig */; };
+		96D6FD4829D30D3900CD455B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D6FD4729D30D3900CD455B /* ViewModel.swift */; };
+		96D6FD4A29D3114100CD455B /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96D6FD4929D3114100CD455B /* remote_config_defaults.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,10 @@
 		9666F95E29CFA9EB00009417 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9666F96029CFA9EC00009417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9666F96329CFA9EC00009417 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		96BB6D1F29DB6CC000430538 /* Tagged.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tagged.swift; sourceTree = "<group>"; };
+		96D6FD4029D308E100CD455B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		96D6FD4729D30D3900CD455B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		96D6FD4929D3114100CD455B /* remote_config_defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = remote_config_defaults.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BB6D1A29DB6CA100430538 /* Tagged in Frameworks */,
+				96D6FD4429D309F600CD455B /* FirebaseAnalytics in Frameworks */,
+				96D6FD4629D309F600CD455B /* FirebaseRemoteConfig in Frameworks */,
+				96BB6D1E29DB6CA100430538 /* TaggedTime in Frameworks */,
+				96BB6D1C29DB6CA100430538 /* TaggedMoney in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +71,11 @@
 			children = (
 				9666F95C29CFA9EB00009417 /* _00_days_of_swiftuiApp.swift */,
 				9666F95E29CFA9EB00009417 /* ContentView.swift */,
+				96BB6D1F29DB6CC000430538 /* Tagged.swift */,
+				96D6FD4729D30D3900CD455B /* ViewModel.swift */,
 				9666F96029CFA9EC00009417 /* Assets.xcassets */,
+				96D6FD4029D308E100CD455B /* GoogleService-Info.plist */,
+				96D6FD4929D3114100CD455B /* remote_config_defaults.plist */,
 				9666F96229CFA9EC00009417 /* Preview Content */,
 			);
 			path = "100-days-of-swiftui";
@@ -83,6 +105,13 @@
 			dependencies = (
 			);
 			name = "100-days-of-swiftui";
+			packageProductDependencies = (
+				96D6FD4329D309F600CD455B /* FirebaseAnalytics */,
+				96D6FD4529D309F600CD455B /* FirebaseRemoteConfig */,
+				96BB6D1929DB6CA100430538 /* Tagged */,
+				96BB6D1B29DB6CA100430538 /* TaggedMoney */,
+				96BB6D1D29DB6CA100430538 /* TaggedTime */,
+			);
 			productName = "100-days-of-swiftui";
 			productReference = 9666F95929CFA9EB00009417 /* 100-days-of-swiftui.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +140,10 @@
 				Base,
 			);
 			mainGroup = 9666F95029CFA9EB00009417;
+			packageReferences = (
+				96D6FD4229D309F600CD455B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				96BB6D1829DB6CA100430538 /* XCRemoteSwiftPackageReference "swift-tagged" */,
+			);
 			productRefGroup = 9666F95A29CFA9EB00009417 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +160,8 @@
 			files = (
 				9666F96429CFA9EC00009417 /* Preview Assets.xcassets in Resources */,
 				9666F96129CFA9EC00009417 /* Assets.xcassets in Resources */,
+				96D6FD4A29D3114100CD455B /* remote_config_defaults.plist in Resources */,
+				96D6FD4129D308E100CD455B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +173,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9666F95F29CFA9EB00009417 /* ContentView.swift in Sources */,
+				96D6FD4829D30D3900CD455B /* ViewModel.swift in Sources */,
 				9666F95D29CFA9EB00009417 /* _00_days_of_swiftuiApp.swift in Sources */,
+				96BB6D2029DB6CC000430538 /* Tagged.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +376,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96BB6D1829DB6CA100430538 /* XCRemoteSwiftPackageReference "swift-tagged" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-tagged.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
+		96D6FD4229D309F600CD455B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96BB6D1929DB6CA100430538 /* Tagged */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96BB6D1829DB6CA100430538 /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = Tagged;
+		};
+		96BB6D1B29DB6CA100430538 /* TaggedMoney */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96BB6D1829DB6CA100430538 /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = TaggedMoney;
+		};
+		96BB6D1D29DB6CA100430538 /* TaggedTime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96BB6D1829DB6CA100430538 /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = TaggedTime;
+		};
+		96D6FD4329D309F600CD455B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96D6FD4229D309F600CD455B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		96D6FD4529D309F600CD455B /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96D6FD4229D309F600CD455B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9666F95129CFA9EB00009417 /* Project object */;
 }
