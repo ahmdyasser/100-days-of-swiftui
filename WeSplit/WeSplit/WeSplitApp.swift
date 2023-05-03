@@ -14,4 +14,5 @@ struct WeSplitApp: App {
             ContentView()
         }
     }
+  // some kool comment
 }

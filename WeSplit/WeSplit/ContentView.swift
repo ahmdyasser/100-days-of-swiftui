@@ -50,6 +50,8 @@ struct ContentView: View {
           }
         }
 
+        // some other kool comment
+
         Section {
           Picker("Tip percentage", selection: $tipPercentage) {
             ForEach(0..<101) {
